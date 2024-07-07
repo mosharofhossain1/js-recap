@@ -35,7 +35,7 @@ var trime = '   hellow man  ';
 let substr ='Bangladesh to my country';
 // console.log(substr);
 // console.log(substr.substring(10))
-// console.log(substr.split(" "));
+console.log(substr.split(" "));
 
 // console.log(substr.slice());
 // console.log(substr.slice(10, 13));
@@ -50,4 +50,5 @@ console.log(substr.replace(/My/ig, 'is My'));
 console.log(substr.repeat(2))
 
 
+// class - 34 complate with array methods 
 
