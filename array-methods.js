@@ -80,7 +80,7 @@ else{
 // const fruits = ['apple', 'mango', 'orange', 'bedena', 'cedera', 'ledera']
 
 
-// array iteration methods 
+
 
 // array.sort()
 // console.log(fruits)
@@ -118,19 +118,19 @@ const sub = multiFucn(6, 2, function(n1, n2){
 })
 console.log(sub) */
 
-const marks = [89, 79, 69,-900, 55, 90, 74, -54, 33, 87, -45];
-const fruits = ['Apple', 'mango', 'orange', 'bedena', 'cedera', 'ledera', 'Zebra']
+// const marks = [89, 79, 69,-900, 55, 90, 74, -54, 33, 87, -45];
+// const fruits = ['Apple', 'mango', 'orange', 'bedena', 'cedera', 'ledera', 'Zebra']
 
-marks.sort();
+// marks.sort();
 // console.log(marks);
 
-console.log(fruits.sort())
+// console.log(fruits.sort())
 
 
 // class - 35 closed // refarence class-36 Number
 
 
-const sortMarks = marks.sort(function(a,b){
+/* const sortMarks = marks.sort(function(a,b){
     // return a - b;
     // return b - a
     if(a < b){
@@ -144,9 +144,9 @@ const sortMarks = marks.sort(function(a,b){
     }
 })
 
-console.log(sortMarks)
+console.log(sortMarks) */
 
-const sortFruits = fruits.sort((a,b)=>{
+/* const sortFruits = fruits.sort((a,b)=>{
     a = a.toLowerCase();
     b = b.toLowerCase();
 
@@ -161,6 +161,99 @@ const sortFruits = fruits.sort((a,b)=>{
     }
 })
 console.log(sortFruits);
-
+ */
 
 // class - 36 closed 
+
+// array.reverse()
+
+// const reverseFruits = fruits.reverse()
+// console.log(reverseFruits);
+
+/* const reverseFruits = fruits.sort((a,b)=>{
+    a = a.toLowerCase()
+    b = b.toLowerCase()
+
+    if(a < b){
+        return -1;
+    }
+    else if(a > b){
+        return 1;
+    }
+    else{return 0}
+}).reverse() // method chaining system
+console.log(reverseFruits); */
+
+
+// array iteration methods 
+
+// Array.forEach()
+
+const marks = [89, 79, 69,-900, 55, 90, 74, -54, 33, 87, -45];
+// const fruits = ['Apple', 'mango', 'orange', 'bedena', 'cedera', 'ledera', 'Zebra']
+
+const marksEach = marks.forEach(function(value,index,arr){
+    // console.log(value);
+    // console.log(index);
+    // console.log(arr);
+})
+
+/* const fruitsEach = fruits.forEach(function(value){
+    console.log(value);
+}) */
+// console.log(fruitsEach)
+
+// array.filter()
+
+/* const filterFruits = fruits.filter(function(value){
+    if(value !== 'orange'){
+        return true;
+    }
+    else{
+        return false;
+    }
+}) */
+
+// console.log(filterFruits)
+
+/* const filterMarks = marks.filter(function(value){
+    if(value % 2 == 0){
+        return true;
+    }
+    else{return false;}
+}) */
+// console.log(filterMarks);
+
+// arrayName.find()
+// arrayName.some()
+
+const fruits = ['Apple', 'mang0', 'orange', 'bedena', 'cedera', 'ledera','bedena', 'Zebra','mango']
+
+const someFruits = fruits.some(function(fruit){
+    if(fruit === 'mang0s'){
+        return true;
+    }
+    else{
+        return false;
+    }
+})
+console.log(someFruits);
+
+const somes  = [23,13,33,43,57];
+const someNumber = somes.some(function(some){
+    if(some % 2 == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+})
+
+console.log(someNumber);
+
+// arrayName.findIndex()
+
+const findindexFruits = fruits.findIndex(function(fruit){
+    return fruit == 'cedera'
+})
+console.log(findindexFruits);
