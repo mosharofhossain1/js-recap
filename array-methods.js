@@ -227,7 +227,7 @@ const marksEach = marks.forEach(function(value,index,arr){
 // arrayName.find()
 // arrayName.some()
 
-const fruits = ['Apple', 'mang0', 'orange', 'bedena', 'cedera', 'ledera','bedena', 'Zebra','mango']
+/* const fruits = ['Apple', 'mang0', 'orange', 'bedena', 'cedera', 'ledera','bedena', 'Zebra','mango']
 
 const someFruits = fruits.some(function(fruit){
     if(fruit === 'mang0s'){
@@ -249,11 +249,61 @@ const someNumber = somes.some(function(some){
     }
 })
 
-console.log(someNumber);
+console.log(someNumber); */
 
 // arrayName.findIndex()
 
-const findindexFruits = fruits.findIndex(function(fruit){
-    return fruit == 'cedera'
+// const findindexFruits = fruits.findIndex(function(fruit){
+//     return fruit == 'cedera'
+// })
+// console.log(findindexFruits);
+
+
+// arrayName.includes()
+
+// const includesFruits = fruits.includes('mangos')
+// console.log(includesFruits);
+
+// Array.from()
+
+// const str = 'Hello';
+// console.log(Array.from(str))
+
+const arr = ['a', 'b', 'c', 'd'];
+// console.log(Array.from(arr));
+// console.log(arr);
+const arr2 = Array.from(arr);
+arr2.push('Joy Bangla');
+arr2.push('Dhakar Bangla');
+console.log(arr)
+console.log(arr2)
+
+
+// arrayName.map()
+
+const numbers = [2,3,4,5];
+const mapNumber = numbers.map(function(n){
+    return n + 3;
 })
-console.log(findindexFruits);
+console.log(mapNumber);
+
+ const fruits = ['Apple', 'mang0', 'orange', 'bedena', 'cedera', 'ledera','bedena', 'Zebra','mango']
+
+ const mapfruits = fruits.map(function(f){
+    return `<li>${f}</li>`;
+ })
+
+ console.log(mapfruits);
+
+//  arrayName.flat()
+// arrayName.flatmap()
+
+// arrayName.reduce()
+
+const reduceNums = numbers.reduce(function(preve, curreval){
+    return preve + curreval;
+}, 0)
+console.log(reduceNums);
+
+
+// class - 38 compleate
