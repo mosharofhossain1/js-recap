@@ -76,3 +76,28 @@ function Nested(){
 const NestedResult = Nested(2,3,4,5,8,5);
 console.log(NestedResult);
 
+// callback function 
+
+function simple(a,b, callback){
+    const callbackFunc = callback(a,b)
+    return callbackFunc;
+}
+
+const simpleValue = simple(2,3, function(x,y){
+    return x + y
+})
+
+console.log(simpleValue);
+
+// Recersive function 
+
+const factorial = (n)=>{
+    if(n === 1){
+        return 1
+    }
+    else{
+        return n * factorial(n-1)
+    }
+}
+
+console.log(factorial(5))
